@@ -1,0 +1,235 @@
+:root {
+  --color-yellow: #dfa237;
+  --color-black: #000000;
+  --color-white: #f8f9fa;
+  --font-size-a: clamp(15px, 1vw, 3rem);
+  --font-size-p: clamp(15px, 1vw, 5rem);
+  --font-size-h2: clamp(20px, 2.5vw, 6rem);
+  --font-size-h1: clamp(50px, 10vw, 20rem);
+  --font-family-title: "Orbitron", sans-serif;
+  --font-family-subtitle: "Questrial", sans-serif;
+  --font-family-a-p: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--font-family-a-p);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+  color: var(--color-white);
+
+  & h2 {
+    font-family: var(--font-family-subtitle);
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.backg-section1 {
+  background-image: url(../images/Tela_fundo.png);
+}
+
+.backg-sections {
+  background-color: var(--color-black);
+}
+
+.header-section1 {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  img {
+    height: 70%;
+  }
+
+  & .invisible-article {
+    height: 70%;
+  }
+}
+
+.header-section1-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2.8rem 0 0;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    font-size: var(--font-size-a);
+  }
+}
+
+.main-title {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 20rem 10rem 30rem;
+
+  & h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: var(--font-family-title);
+    letter-spacing: 2rem;
+    font-size: var(--font-size-h1);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  & .title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2%;
+  }
+
+  & .span-e {
+    color: var(--color-yellow);
+    margin: 0 3rem;
+  }
+}
+
+.container-robot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-arm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.about-robot {
+  width: 40%;
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20rem 4rem;
+  gap: 2rem;
+
+  & p {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-a-p);
+    text-align: justify;
+  }
+}
+
+.about-robot-image {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 80%;
+  }
+}
+
+.title-galery {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 10rem;
+}
+
+.container-galery {
+  width: 80%;
+  height: calc(100vh - 15rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 1rem auto;
+
+  flex-wrap: wrap;
+  gap: 0 30rem;
+
+  & img {
+    width: 24%;
+    border-radius: 10px;
+  }
+}
+
+.about-us-title {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 10rem;
+}
+
+.section-about-us {
+  width: 100%;
+  min-height: calc(100vh - 40rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20rem;
+}
+
+.about-us-person {
+  & img {
+    border-radius: 50%;
+    width: 10rem;
+  }
+
+  & h3 {
+    font-size: 2.3rem;
+    margin: 2.3rem 0 1rem 0;
+    font-family: var(--font-family-subtitle);
+  }
+
+  & p {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-a-p);
+  }
+}
